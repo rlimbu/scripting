@@ -1,6 +1,7 @@
 # sums the quantities on the second column by the items on the first column
 # and prints the results in the descending order by sums.
 # first record of the file has headers
+# USAGE: awk -F, -f groupby.awk /path/to/data/file
 
 NR > 1 { total[$1] += $2 }
 
